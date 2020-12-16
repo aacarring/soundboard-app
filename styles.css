@@ -9,6 +9,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+    background: snow;
 }
 .container {
     display: flex;
@@ -17,10 +18,21 @@ body {
 header {
     text-align: center;
 }
+h1,
+p {
+    margin: 30px;
+}
+h1 {
+    font-size: 3em;
+}
+p {
+    font-size: 2em;
+}
 .buttons {
     display: flex;
     flex-direction: row;
     margin: 50px;
+    flex-wrap: wrap;
 }
 .button {
     width: 50px;
@@ -29,5 +41,21 @@ header {
     padding: 50px;
     border-radius: 50%;
     outline: none;
-    border: 2px solid white;
+    border: 5px solid white;
+}
+.button1,
+.button4 {
+    background: #F0B4C1;
+}
+.button2,
+.button5 {
+    background: #9CDAF0;
+}
+.button3,
+.button6 {
+    background: #F0E984;
+}
+.button:hover {
+    background:#848f92;
+    cursor: pointer;
 }
